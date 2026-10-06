@@ -1,3 +1,8 @@
+
+/* сука во я тупой лишней работы сделал только сейчас понял что там только одну таблицу надо было воткнуть а не лето и зиму но похуй
+так даже интереснее было  */
+
+
 select r.region, sum(case when medals.medal in( 'Silver', 'Bronze') then 1 else 0 end) as total_non_gold_medal 
 from (select noc,medal
 from athletes_summer_games 
