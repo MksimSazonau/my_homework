@@ -52,6 +52,5 @@ group by r.region
 order by total_non_gold_medal desc ;    
 
 
- * но как то сложно обьяснить почему не понятно там с этими noc 
- */
+
 
