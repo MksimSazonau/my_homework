@@ -1,6 +1,4 @@
 
-/* сука во я тупой лишней работы сделал только сейчас понял что там только одну таблицу надо было воткнуть а не лето и зиму но похуй
-так даже интереснее было  */
 
 
 select r.region, sum(case when medals.medal in( 'Silver', 'Bronze') then 1 else 0 end) as total_non_gold_medal 
@@ -17,10 +15,6 @@ having  sum(case when medals.medal = 'Gold' then 1 else 0 end) = 0
 and sum(case when medals.medal in( 'Silver', 'Bronze') then 1 else 0 end) >0 
 order by total_non_gold_medal desc;
 
-/* короче тут нахуевертил но вроде как результат выдало нужный 
- * да подсматривал в иишку но старался все свм разобрать 
- * в целом каждую строчку понимаю 
- */
 
 
 select r.region, sum(case when medals.medal in( 'Silver', 'Bronze') then 1 else 0 end) as total_non_gold_medal 
@@ -57,9 +51,7 @@ select  noc
 group by r.region 
 order by total_non_gold_medal desc ;    
 
-/* короче тут добился чего вроде надо через except но как будто первый запрос проще и он выдает такойже результат
- * да иишкой пользовался но для подсказок код писать старадся сам 
- * есть пару моментов коотрфе не понятно 
+
  * но как то сложно обьяснить почему не понятно там с этими noc 
  */
 
