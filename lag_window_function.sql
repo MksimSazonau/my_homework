@@ -10,8 +10,3 @@ coalesce (
 current_medal - lag(current_medal) over (partition by noc order by year),0) as  dif_medal 
 from current_medal
 where noc = 'USA'
-
-/* в целом все сделал сам и lead() тоже в принципе знаю как применять 
- * но я жестко втыкаю и не понимаю вот эту часть partition by и order by в оконной функции 
- * если сможешь то обьясни простыми словами а то через иишку нихера не могу понять 
- */
